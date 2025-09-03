@@ -1,0 +1,15 @@
+.responive-links, .more-information{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color: purple;
+    padding: 5px;
+}
+p{
+    line-height: 23px;
+    padding: 0px 5px;
+    color: rgb(78, 6, 6);
+}

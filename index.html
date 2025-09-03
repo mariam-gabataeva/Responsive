@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Responsive</title>
+</head>
+<body>
+    <h1 class="responsive-title">Responsive</h1>
+    <p class="responsive-explain">ჩვენ როცა ვქმნით გვერდს, ვიცით რომ ამ გვერძე ადამიანები შევლენ სხვადასხვა მოწყობილობიდან. შესაბამისად დეველოპერმა უნდა შექმნას გვერდი სხვადასხვა მოწყობილობის რეზოლუციისთვის. ანუ საიდანაც არ უნდა შევიდეს ადამიანი ვებ-გვერძე, ეს იქნება მობილური, ნოუდბუქი, პლანშეტი, ყველგან კარგად, ლამაზად და კოხტად უნდა ჩანდეს ეს ვებ-გვერდი. სწორედ ეს არის Responsive. <br> რათქმაუნდა ყველა ეკრენის გაფართოებაზე არ ვწერთ კოდს მაგრამ არის რამდენიმე ეკრენის ზომა რამხელამდეც უნდა შეიცვალოს ვებ-გვერდი. <br> პლანშეტის ზომა სადაცმდეც უნდა შეიცვალოს ვებ-გვერდი არის - 768 პიქსელი. <br> ტელეფონის ზომა სადამდეც უნდა შიცვალოს ზომა არის - 500 პიქსელს დაბლა ითვლება დიზაინი. ანუ ტელეფონებზე 350 პიქსელზე ქვემოთ დიაზინს არ ვცვლით.</p>
+    <div class="responsive-div">
+        <h2>როგორ ხდება Responsive-ს შემოტანა CSS-ში და მისი წერა?</h2>
+        <p>Responsive-ს CSS-ში ვწერთ ასე " @media {max-width: ..px;} ". ავხსნათ ახლა რას ნიშნავს ეს კოდი. <br> @media - ამ ფროფერთით CSS-ს ვეუბნები რომ შემომაქ Responsive. ამ ფროფერთით ვიწყებ რესპონსივის წერას. მერე ვხსნი ფიგურულ ფრჩხილებს და ვწერ max-width და ვუთითებ ეკრენის ზომას, ვუწერ პიქსელს, ამით ვეუბნები რომ ამ პიქსელის ზომაზე როცც იქნება ეკრენი ან ამ პიქსელს ქვემოთ უკვე სხვა დიზაინი უნდა გამოიყენოს. <br> ყოველი ეკრენის ზომის გაფართოებაზე რასაც დავწერ დიზაინს უკვე იწერება ფროფერთის მერე, ვუთითებ მაქსიმალურ განს ეკარნის და ემ განს როგორც მიაღწევს ეკარენი ან ჩამოვა მითითებული ზომის ქვემოთ ეს სტილი შეიცვლება. </p>
+        <p>როცა მჭირდება რეზოლუციის დაპატარავების დროს რაიმე ელემენტები გავაქრო უკვე რადგან ეკრანის დაპატარავებასთან ერთად შეიძლება რაიმე აღარ დამჭირდეას, ამ დროს ვიყენებ display: none; -ს. ანუ მოვძებნი იმ ელემენტის სახელს ან კლას რაც აქვს გაწერილი და რესპონსივის CSS-ში ვუწერ display: none; -ს. თუ მინდა სხვა ეკრანის ზომაზე ისევ გამოჩნდეს ცემი ელემენტი მაშინ ისევ უნდა დავუწერო display და გავუწერო რომ იყოს flex ან block ან inline-block ან inline -ი, რომელიც დამჭირდება იმ სიტუაციაში ის.</p>
+    </div>
+    <div class="links">
+        <h2>ლინკები Responsive -ზე ინფორმაციის მოსაძებნად.</h2>
+        <div class="responive-links">
+            <a href="https://www.w3schools.com/css/css_rwd_viewport.asp" class="responsive-link-1">Responsive Web Design - The Viewport</a>
+            <a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp" class="responsive-link-2">CSS @media Rule</a>
+            <a href="https://mediag.com/blog/popular-screen-resolutions-designing-for-all/" class="responsive-link-3">Media GENESIS</a>
+        </div>
+        <div class="more-information">
+            <h4>დამატებითი მასალა რესპონსივზე</h4>
+            <a href="https://www.youtube.com/watch?v=3tLb3i7GB38&list=PL4cUxeGkcC9g9Vh9MAA-XKnfJsWZnPZFw&index=1&ab_channel=NetNinja">Information in Youtobe</a>
+            <h4>HTML ვალიდატორი რომლის საშუალებითაც შეგიძლიათ შეამოწმოთ რამდენად სწორად გიწერიათ HTML კოდი, ასევე დაინახავთ რა ერორები შეიძლება გქონდეთ კოდში. მოაკოპირეთ მთლიანი HTML ფაილი ჩასვით ვალიდატორის ველში და დააჭირეთ Check-ს.</h4>
+            <a href="https://validator.w3.org/#validate_by_input">HTML validator</a>
+            <h4>CSS ვალიდატორი</h4>
+            <a href="https://jigsaw.w3.org/css-validator/validator">CSS validator</a>
+        </div>
+    </div>
+</body>
+</html>
